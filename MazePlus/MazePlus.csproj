@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E2B89E27-BED3-427B-A97E-90EA16ED5658}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MazePlus</RootNamespace>
+    <AssemblyName>MazePlus</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icons8-maze-64.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="JsonOpenInfo.cs" />
+    <Compile Include="MaezPlus.Algorithm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MazePlus.ClickEvents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MazePlus.Global.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MazePlus.Init.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JsonSaveInfo.cs" />
+    <Compile Include="MazePlus.SetJson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MazePlus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MazePlus.Designer.cs">
+      <DependentUpon>MazePlus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MazePlus.resx">
+      <DependentUpon>MazePlus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-black-cat-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-exit-sign-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-exit-sign-50_negative.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\move-cat-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\re-pixel-cat-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixel-cat-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-exit-door-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icons8-maze-64.ico" />
+    <None Include="Resources\skateboarding_replay_381.png" />
+    <None Include="Resources\skateboarding_replay_38.png" />
+    <None Include="Resources\skateboarding_38.png" />
+    <None Include="Resources\exit_38.png" />
+    <None Include="Resources\skateboarding2.png" />
+    <None Include="Resources\skateboarding1.png" />
+    <None Include="Resources\skateboarding.png" />
+    <None Include="Resources\icons8-skateboarding1.gif" />
+    <None Include="Resources\icons8-skateboarding.gif" />
+    <None Include="Resources\pixel-cat-48-top.png" />
+    <None Include="Resources\pixel-cat-48-right.png" />
+    <None Include="Resources\pixel-cat-48-left.png" />
+    <None Include="Resources\pixel-cat-48-bottom.png" />
+    <None Include="Resources\icons8-exit-door-38.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

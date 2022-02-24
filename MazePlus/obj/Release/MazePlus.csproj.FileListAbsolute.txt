@@ -1,0 +1,12 @@
+C:\Users\JGLee1101\source\repos\MazePlus\MazePlus\bin\Release\MazePlus.exe.config
+C:\Users\JGLee1101\source\repos\MazePlus\MazePlus\bin\Release\MazePlus.exe
+C:\Users\JGLee1101\source\repos\MazePlus\MazePlus\bin\Release\MazePlus.pdb
+C:\Users\JGLee1101\source\repos\MazePlus\MazePlus\bin\Release\Newtonsoft.Json.dll
+C:\Users\JGLee1101\source\repos\MazePlus\MazePlus\bin\Release\Newtonsoft.Json.xml
+C:\Users\JGLee1101\source\repos\MazePlus\MazePlus\obj\Release\MazePlus.MazePlus.resources
+C:\Users\JGLee1101\source\repos\MazePlus\MazePlus\obj\Release\MazePlus.Properties.Resources.resources
+C:\Users\JGLee1101\source\repos\MazePlus\MazePlus\obj\Release\MazePlus.csproj.GenerateResource.cache
+C:\Users\JGLee1101\source\repos\MazePlus\MazePlus\obj\Release\MazePlus.csproj.CoreCompileInputs.cache
+C:\Users\JGLee1101\source\repos\MazePlus\MazePlus\obj\Release\MazePlus.csproj.CopyComplete
+C:\Users\JGLee1101\source\repos\MazePlus\MazePlus\obj\Release\MazePlus.exe
+C:\Users\JGLee1101\source\repos\MazePlus\MazePlus\obj\Release\MazePlus.pdb
